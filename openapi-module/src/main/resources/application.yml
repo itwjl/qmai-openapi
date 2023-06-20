@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: qmai-openapi
+  profiles:
+    active: dev
+  mvc:
+    static-path-pattern: /**
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+server:
+  port: 8081
+  servlet:
+    context-path: /v3
